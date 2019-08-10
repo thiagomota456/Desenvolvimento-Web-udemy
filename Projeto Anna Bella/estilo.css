@@ -1,0 +1,48 @@
+html{
+	background-image: url("imagens/fundo.png");
+}
+
+td{
+	font-weight: bold;
+	text-align: center;
+}
+
+a{
+	color: blue;
+}
+
+table{
+	background-color: #dddd;
+	padding: 10px;
+	height: 90px;
+	width: 900px;
+}
+
+#ConteudoPrincipal{
+	width: 880px;
+	padding: 10px;
+	background-color: white;	
+}
+
+#TodosOsDireitosReservados{
+	
+	text-align: center;
+	/*margin: auto;*/
+	width: 880px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#Foto1Style{
+	border: 10px solid #ddd;
+}
+
+#DivFoto1{
+	padding: 10px;
+}
+
+#TiituloDaPágina{
+	color: #444241;
+	font-weight: bold;
+	font-size: 20px;
+}
