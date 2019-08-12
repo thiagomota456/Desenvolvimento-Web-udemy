@@ -1,0 +1,13 @@
+﻿* Usar as divs de forma mais inteligente :
+	
+	- Principal
+	- Menu
+	- Conteudo
+	- Etc..
+	
+	Em resumo, divida seu site de forma simples e objetiva com divs.
+
+* NÂO USE MAIS TABELAS PRA FORMATAR SEU SITE.
+
+* Lembrar de usar cor de fundo padão sempre que definir imagemde fundo padrão:
+	- background: #color url('image');
