@@ -1,0 +1,76 @@
+body{    
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #E6E6E6;
+}
+
+
+/*---------------Conteudo Central---------------*/
+#ConteudoCentral{
+    border: #4E4E4E solid 1px;
+    position: relative;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#EspaçoDeNoticias{
+    position: absolute;
+}
+/*---------------End Conteudo Central---------------*/
+
+
+
+/*---------------Menu style---------------*/
+#TecBlog{
+    margin: 25px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#TecColor{
+    color: #4E4E4E;
+}
+
+#BlogColor{
+    color: white;
+}
+#Menu{
+    text-align: center;
+    background: #F7B700;
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    top : 0px;
+    left: 0px;
+}
+/*---------------End Menu style---------------*/
+
+/*--------------Link Style------------*/
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+    background: white;
+}
+.LinksDoMenu{
+    padding: 10px;
+    text-decoration: none;   
+}
+/*--------------End Link Style------------*/
+
+
+#TodosOsDireitos{
+
+    background: #CCCCCC;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+
+    text-align: center;
+}
+
