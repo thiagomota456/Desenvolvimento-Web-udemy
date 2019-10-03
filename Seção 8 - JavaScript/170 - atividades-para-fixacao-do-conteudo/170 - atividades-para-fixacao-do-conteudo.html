@@ -26,29 +26,37 @@
 
 				var MensagenDeClassificacaoDeMassaCorporal = ''
 
-				if(massaCorporal < 16)
+				if(massaCorporal < 16){
 					MensagenDeClassificacaoDeMassaCorporal = 'Baixo peso muito grave'
+				}
 
-				if(massaCorporal => 16 && massaCorporal <= 16,99)
+				else if((massaCorporal >= 16) && (massaCorporal <= 16.99)){
 					MensagenDeClassificacaoDeMassaCorporal = 'Baixo peso grave'
+				}
 
-				if(massaCorporal => 17 && massaCorporal <= 18,49)
+				else if(massaCorporal >= 17 && massaCorporal <= 18.49){
 					MensagenDeClassificacaoDeMassaCorporal = 'Baixo peso'
+				}
 
-				if(massaCorporal => 18,50 && massaCorporal <= 24,99)
+				else if(massaCorporal >= 18.50 && massaCorporal <= 24.99){
 					MensagenDeClassificacaoDeMassaCorporal = 'Peso normal'
+				}
 
-				if(massaCorporal => 25 && massaCorporal <= 29,99)
+				else if(massaCorporal >= 25 && massaCorporal <= 29.99){
 					MensagenDeClassificacaoDeMassaCorporal = 'Sobrepeso'
+				}
 
-				if(massaCorporal => 30 && massaCorporal <= 34,99)
+				else if(massaCorporal >= 30 && massaCorporal <= 34.99){
 					MensagenDeClassificacaoDeMassaCorporal = 'Obesidade grau I'
+				}
 
-				if(massaCorporal => 35 && massaCorporal <= 39,99)
+				else if(massaCorporal >= 35 && massaCorporal <= 39.99){
 					MensagenDeClassificacaoDeMassaCorporal = 'Obesidade grau II'
+				}
 
-				if(massaCorporal > 40)
+				else if(massaCorporal > 40){
 					MensagenDeClassificacaoDeMassaCorporal = ' Obesidade grau III'
+				}
 				
 		    
 				document.write(nome + ' possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: ' + MensagenDeClassificacaoDeMassaCorporal)
