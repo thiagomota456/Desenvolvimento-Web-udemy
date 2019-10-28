@@ -3,49 +3,93 @@
     <header>
         <title>TecBlog - O seu blog de tegnologia</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </header>
 
     <body>
-        <div id="Menu">
         
-            <p id="TecBlog"><span id="TecColor">Tec</span><span id="BlogColor">Blog</span></p>
+        <div id="area-cabecalho">
             
-            <a href="index.html" class="LinksDoMenu">Home</a>
-            <a href="index.html" class="LinksDoMenu">Jogos</a>
-            <a href="index.html" class="LinksDoMenu">Celulares</a>
-            <a href="index.html" class="LinksDoMenu">Informática</a>
-            <a href="index.html" class="LinksDoMenu">Eletrônicos</a>
+            <div id="area-logo">
+                <h1>Tec<span class="branco">Blog</span></h1>
+            </div>
+
+            <dir id="area-menu">
+                <a href="index.html">Home</a>
+                <a href="index.html">Jogos</a>
+                <a href="index.html">Celulares</a>
+                <a href="index.html">Informaticá</a>
+                <a href="index.html">Eletrônicos</a>
+            </dir>
 
         </div>
 
-        <div id="ConteudoCentral">
+        <div id="area-principal">
 
-            <div id="EspaçoDeNoticias">
+            <div id="area-postagens">
                 
-                <div class="Noticia">
-                    <p>Titulo da postagem 1</p>
-                    <img src="imagens/imagem1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula</p>
-                    <a href="index.html">Leia mais</a>
+                <!--Abertura postagem-->
+                <div class="postagem">
+                    <h2>Titulo da postagem 1</h2>
+                    <span class="data-postagem">postado 20 de março de 2022</span>
+                    <img width="620px" src="imagens/imagem1.jpg">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim libero sed vehicula tempor. Aenean nec sodales libero. Curabitur eget purus eros. Etiam eget lacus placerat, efficitur dolor sed, pharetra purus. Fusce ut pellentesque turpis, ac finibus risus. Ut eu lorem et nibh vehicula pharetra. Ut velit dui, euismod nec nisi at, consequat consequat justo. Nam faucibus mollis maximus. Donec euismod tortor sit amet urna viverra egestas. Cras facilisis pharetra justo, eget convallis velit hendrerit et.
+                    </p>
+                    <a href="">Leia mais</a>
+                </div>
+                <!--Fechamento postagem-->
+
+                <!--Abertura postagem-->
+                <div class="postagem">
+                    <h2>Titulo da postagem 2</h2>
+                    <span class="data-postagem">postado 10 de março de 2022</span>
+                    <img width="620px" src="imagens/imagem2.jpg">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim libero sed vehicula tempor. Aenean nec sodales libero. Curabitur eget purus eros. Etiam eget lacus placerat, efficitur dolor sed, pharetra purus. Fusce ut pellentesque turpis, ac finibus risus. Ut eu lorem et nibh vehicula pharetra. Ut velit dui, euismod nec nisi at, consequat consequat justo. Nam faucibus mollis maximus. Donec euismod tortor sit amet urna viverra egestas. Cras facilisis pharetra justo, eget convallis velit hendrerit et.
+                    </p>
+                    <a href="">Leia mais</a>
+                </div>
+                <!--Fechamento postagem-->
+
+            </div>
+
+            <div id="area-lateral">
+                
+                <div class="conteudo-lateral">
+                    
+                    <h3>Postagens recentes</h3>
+                    
+                    <div class="postagem-lateral">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="">Leia mais</a>
+                    </div>
+
+                    <div class="postagem-lateral" style="border-bottom: none">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="">Leia mais</a>
+                    </div>
+
                 </div>
 
-                <div class="Noticia">
+                <div class="conteudo-lateral">
+                    
+                    <h3>Categoria</h3>
+                    <a href="">Jogos</a><br>
+                    <a href="">Celulares</a><br>
+                    <a href="">Eletrônicos</a><br>
+                    <a href="">Informática</a><br>
+                    <a href="">Software Livre</a><br>
 
                 </div>
 
             </div>
 
-            <div id="BarraLateral">
-
-            </div>
-
-            <div id="TodosOsDireitos">
-                <p class="center">Todos os direitos reservados</p>
+            <div id="rodape">
+                Todos os direitos reservados
             </div>
         </div>
-        
-        
+
     </body>
 
 </html>
