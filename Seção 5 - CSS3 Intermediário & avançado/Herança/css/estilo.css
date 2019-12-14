@@ -1,0 +1,30 @@
+/****Herança e especificidade****/
+/*Seletores mais especificos ficam sempre na frente*/
+/*body{
+    Formatações gerais aqui
+    color: red;
+    border: 1px solid blue;
+    background: gray;
+}*/
+/*
+#pagina p{
+    color: red !important; 
+}
+#pagina p{
+    color: blue;
+}*/
+*{
+    color: red;
+}
+h2{
+    color: blue;
+
+}
+
+h2#amarelo{
+    color: yellow;
+}
+
+h2.verde{
+    color: green;
+}
