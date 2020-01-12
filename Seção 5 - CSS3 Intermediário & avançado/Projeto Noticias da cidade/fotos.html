@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
     
-    <body class="fotos">
+    <body id="uma-coluna" class="fotos">
         <!--Início do container-->
         <div id="container">
 
@@ -29,14 +29,78 @@
 
             <!--Início do conteudo-->
             <div id="conteudo">
+                
+                <div id="primario">
 
-                <div>Primario</div>
-                <div>Secundario</div>
-                <div>Lateral</div>
+                    <div class="caixa destaque">
+                        <h2>Destaque</h2>
+                        <div class="caixa-conteudo">
+                            <h3>Nova legislação</h3>
+                            <img class="imagem-principal" src="imgs/taxi.jpg" width="100%">
+                            <p>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elist.
+                            </p>
+                            <a href="">Leia mais!</a>
+                        </div>
+                    </div>
+
+                    <div class="caixa">
+                        <h2>Mundo</h2>
+                        <div class="caixa-conteudo">
+                            <ul id="lista-noticias">
+                                
+                                <li>
+                                    <a href="">
+                                        <img src="imgs/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur ...</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <img src="imgs/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur ...</p>
+                                    </a>
+                                </li>
+
+                                <li>
+
+                                    <a href="">
+                                        <img src="imgs/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur ...</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="imgs/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur ...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
 
             </div><!--Fim do conteudo-->
 
         </div><!--Fim do container-->
+
+        <div id="container-rodape" style="clear: both;">
+            <div id="rodape">
+                &copy;Copyright 2000-2020 Notícias cidade 
+            </div>
+        </div>
     </body>
 
 </html>
