@@ -73,7 +73,6 @@ body{
 }
 a{
     text-decoration: none;
-    color: #000;
 }
 a.reserva{
     text-transform: uppercase;
@@ -147,21 +146,30 @@ p{
     font-size: 1em;
     margin-bottom: 10px;
 }
-/*Formatação da area lateral*/
-#area-lateral li:hover{
-    background: #fdf6be;
+
+/*Formatações da area lateral*/
+#beneficios li{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
 }
-#area-lateral li img{
-    width: 45%;
+
+#beneficios li a img{
     float: left;
     margin: 8px;
 }
-#area-lateral li h3{
-    padding-top: 10px;
-}
-#area-lateral li p{
+
+#beneficios li a p{
+    color: #000;
     font-size: 0.8em;
 }
-.separador{
-    clear: both;
+#beneficios li a h3{
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../imgs/ornamento.png) no-repeat center right;
+}
+#beneficios li:hover{
+    background: #f6f3d6;
+    cursor: pointer;
 }
