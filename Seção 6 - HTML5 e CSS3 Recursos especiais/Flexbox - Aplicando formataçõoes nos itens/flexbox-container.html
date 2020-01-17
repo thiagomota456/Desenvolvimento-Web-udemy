@@ -7,31 +7,124 @@
         <style type="text/css">
             #conteudo{
                 background: #dcdcdc;
-                height: 600px;
+                height: 150px;
                 display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-                align-items: baseline;
             }
-            .item{
+
+            .formatacaoPadrao{
+                width: 100px;
+                height: 100px;
                 margin: 10px;
                 background: white;
                 border: 1px solid gray;
             }
+            .flexGrow0{
+                /*Define a proporção de espaço ocupado por umitem*/
+                flex-grow: 0;
+            }
+            
+            .flexGrow1{
+                flex-grow: 1;
+            }
+
+            
+            .item3{
+                flex-grow: 2;
+            }
+
+            .flexShrink0AndWidth200{
+                /*Define a capacidade de redução de tamnho do item*/
+                width: 200px;
+                flex-shrink: 0;
+            }
+
+            .flexShrink1{
+                flex-shrink: 1;
+            }
+
+            
+            .flexShrink2{
+                flex-shrink: 2;
+            }
+
+            
+            .flexShrink5{
+                flex-shrink: 5;
+            }
+
+
+            /*Rearanjar item facilmente*/
+            .ordem1{
+                order: 1;
+            }
+
+            .ordem2{
+                order: 2;
+            }
+
+            .ordem3{
+                order: 3;
+            }
+            
+            .ordem4{
+                order: 4;    
+            }
+
+            .ordem{
+                order: -1;    
+            }
+            /*Flex-basis*/
+            .flexBasis{
+                /*Indica o tamanho inicial do flex item antes da distribuição do espaço restante*/
+                flex-basis: 100px;
+            }
+            h2{
+                font-size: medium;
+            }
+            
         </style>
         
     </head>
 
     <body>
 
-        <h1>Flexbox</h1>
+        <h1>Flexbox - Formatação em itens</h1>
+        
+        <h2>Uso do order:</h2>
         <div id="conteudo">
-            <div class="item" style="padding-top: 60px;">01</div>
-            <div class="item">02</div>
-            <div class="item">03</div>
-            <div class="item">04</div>
-            <div class="item">05 <br> mais conteudo</div>
+            <div class="formatacaoPadrao ">01</div>
+            <div class="formatacaoPadrao ordem4">02</div>
+            <div class="formatacaoPadrao ordem2">03</div>
+            <div class="formatacaoPadrao ordem1">04</div>
+            <div class="formatacaoPadrao ordem">05</div> <!--Todos por padrao são 0-->
+        </div>
+        <br>
+
+        <h2>Uso do flex-grow:</h2>
+        <div id="conteudo">
+            <div class="formatacaoPadrao flexGrow1">01</div>
+            <div class="formatacaoPadrao item3">02</div>
+            <div class="formatacaoPadrao">03</div>
+            <div class="formatacaoPadrao">04</div>
+            <div class="formatacaoPadrao">05</div> <!--Todos por padrao são 0-->
+        </div>
+
+        <h2>Uso do flex-grow:</h2>
+        <div id="conteudo">
+            <div class="formatacaoPadrao  flexShrink0AndWidth200">01</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexShrink1">02</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexShrink2">03</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexShrink5">04</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200">05</div> <!--Todos por padrao são 0-->
+        </div>
+        
+        <h2>Uso do flex-basis:</h2>
+        <div id="conteudo">
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexBasis">01</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexBasis">02</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexBasis">03</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexBasis">04</div>
+            <div class="formatacaoPadrao  flexShrink0AndWidth200 flexBasis">05</div> <!--Todos por padrao são 0-->
         </div>
 
     </body>
