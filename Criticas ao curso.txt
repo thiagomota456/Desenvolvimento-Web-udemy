@@ -1,0 +1,7 @@
+Criticas ao curso:
+
+Senti que falatou nos ensinar a consultar a documentação do bootstrap em vez de nos ensinar funcionalidades. AS funcionalidades muda. Cabe a nos nos adaptarmos ao aprendizado contate da feramenta no dia a dia. 
+
+Seria legal por desafios que tivessemos que consultar a documentação e tambem um exemplo onde você ensina consutando a documentação. Isso nos prepararia bem mais para um exercicio proficional onde vamos nos depara com coisas que não conhecemos a todos momento.
+
+(Tornar isso mais curto)
