@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+
+        <script>
+
+            function acao1(){
+                alert('Evento disparado')
+            }
+
+            function acao2(){
+                alert('Evento disparado acao2')
+            }
+        
+        </script>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;"><b>Eventos Teclado</b></h2>
+        <hr>
+
+        <h2 style="text-align: center;">OnKeydown:</h2>
+        <div style="text-align: center;">
+            <input onKeydown="acao1()" style="background: #ccc;" type="text">
+        </div>
+
+        <h2 style="text-align: center;">OnKeyup:</h2>
+        <div style="text-align: center;">
+            <input onKeyup="acao1()" style="background: #ccc;" type="text">
+        </div>
+
+        <h2 style="text-align: center;">OnKeypress:</h2>
+        <div style="text-align: center;">
+            <input onKeypress="acao1()" style="background: #ccc;" type="text">
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexibilidade de parâmetros</title>
+
+    <script>
+
+        function soma(a, b){
+            return a + b
+        }
+
+        console.log(soma(7, 7))
+        console.log(soma(7, 7, 9, 15)) //O js desconsidera os parametros exedentes
+        console.log(soma(7)) // b = undefined que vai retornar NaN (not a number)
+        console.log(soma())// undefined + undefined = NaN
+        
+    </script>
+</head>
+<body>
+</body>
+</html>

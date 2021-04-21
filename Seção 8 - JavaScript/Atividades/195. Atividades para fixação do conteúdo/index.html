@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        function amarelo(){
+            document.getElementById('inputField').style.background = 'yellow'
+        }
+
+        function branco(){
+            document.getElementById('inputField').style.background = 'white'
+        }
+
+
+
+        function corDoConteudo(){
+
+            var str = document.getElementById('inputField').value
+            
+            if(str.length < 3){
+                document.getElementById('inputField').style = "color: red;"
+            }
+            else{
+                document.getElementById('inputField').style = "color: green;"
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="inputField" onfocus="amarelo()" onblur="branco()" onkeyup="corDoConteudo()">
+</body>
+</html>

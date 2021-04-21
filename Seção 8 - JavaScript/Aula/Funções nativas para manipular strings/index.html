@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+        var name = 'Jorge Sant Ana'
+        document.write('<hr>')
+        document.write(name.length)
+        
+        document.write('<hr>')
+        document.write(name.charAt(7))
+        
+        document.write('<hr>')
+        document.write(name.indexOf('g')) //Case sensitive
+
+        //Retorna -1 aquando não há ocorencia
+        document.write('<hr>')
+        document.write(name.indexOf('i')) //Case sensitive
+
+        document.write('<hr>')
+        document.write(name.replace('Sant Ana', 'Silva'))
+
+        document.write('<hr>')
+        document.write(name.substr(6, 4)) 
+
+        document.write('<hr>')
+        document.write(name.toLowerCase())
+
+        document.write('<hr>')
+        document.write(name.toUpperCase())
+        
+        //Remove espações da escremidades
+        name = ' Jorge Sant Ana '
+        document.write('<hr>')
+        document.write('-' + name + '-')
+        document.write('<br>')
+        document.write('-' + name.trim() + '-')
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

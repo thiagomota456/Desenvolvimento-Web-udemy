@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+
+        <script>
+
+            function acao(){
+                alert('Evento disparado')
+            }
+
+            function acao2(){
+                alert('Evento disparado acao2')
+            }
+        
+        </script>
+    </head>
+
+    <body>
+        <h2><b>Eventos Mouse</b></h2>
+
+        <h2 style="text-align: center;">Onclick</h2>
+        <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px; margin: auto;"></div>
+        <br>
+
+        <h2 style="text-align: center;">Ondblclick</h2>
+        <div ondblclick="acao()" style="background: rgb(180, 15, 15); height: 150px; width: 150px; margin: auto;"></div>
+        <br>
+
+        <h2 style="text-align: center;">Onmouseup</h2>
+        <div onmouseup="acao()" style="background: rgb(73, 241, 123); height: 150px; width: 150px; margin: auto;"></div>
+        <br>
+
+        <h2 style="text-align: center;">Onmouseover</h2>
+        <div onmouseover="acao()" style="background: rgb(179, 21, 157); height: 150px; width: 150px; margin: auto;"></div>
+        <br>
+
+        <h2 style="text-align: center;">Onmouseout</h2>
+        <div onmouseout="acao()" style="background: rgb(159, 230, 224); height: 150px; width: 150px; margin: auto;"></div>
+        <br>
+
+        <h2 style="text-align: center;">Onclick + Onmouseout </h2>
+        <div onclick="acao()" onmouseout="acao2()"style="background: #ccc; height: 150px; width: 150px; margin: auto;"></div>
+        <br>
+
+        
+    </body>
+
+</html>

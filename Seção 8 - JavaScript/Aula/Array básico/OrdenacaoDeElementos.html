@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordenação de elementos</title>
+
+    <script>
+        
+        
+        var lista_frutas = Array()
+        
+        lista_frutas[0] = 'Maçã'
+        lista_frutas[1] = 'Uva'
+        lista_frutas[2] = 'Banana'
+        lista_frutas[3] = 'Morango'
+
+        console.log(lista_frutas)
+        console.log(lista_frutas.sort())
+
+        var lista_numeros = Array()
+        
+        lista_numeros[0] = 12
+        lista_numeros[1] = 40
+        lista_numeros[2] = 3
+        lista_numeros[3] = 7
+        lista_numeros[4] = 19
+        lista_numeros[5] = 1
+
+        console.log(lista_numeros)
+        console.log(lista_numeros.sort())//ordena por caracter
+
+        console.log(lista_numeros.sort(ordenaNumeros))
+
+        //Funciona tmb pra strings pois o operador - faz o cast
+        var lista_numerosString = Array()
+        lista_numerosString[0] = '12'
+        lista_numerosString[1] = '40'
+        lista_numerosString[2] = '3'
+        lista_numerosString[3] = '7'
+        lista_numerosString[4] = '19'
+        lista_numerosString[5] = '1'
+
+        console.log(lista_numerosString.sort(ordenaNumeros))
+
+        function ordenaNumeros(a,b){
+            return a - b
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

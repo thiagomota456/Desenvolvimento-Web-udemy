@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - manioulando valores de input</title>
+
+    <script>
+        function distribuiCaracter(){
+            //Selecionar o valor digitado
+            var caracter = document.getElementById('entrada').value
+
+            document.getElementById('entrada').value = ''
+
+            caracter = caracter.trim();
+
+            if((/[a-zA-z]/).test(caracter)){
+                document.getElementById('letra').value = document.getElementById('letra').value + caracter
+            }
+            else if((/[0-9]/).test(caracter)){
+                document.getElementById('numero').value = document.getElementById('numero').value + caracter
+            }
+            
+        }
+    </script>
+
+</head>
+<body>
+    <div style="text-align:center;">
+        <input 
+        type="text" 
+        placeholder="Digite o caracter aqui" 
+        onkeyup="distribuiCaracter()" 
+        id="entrada">
+    </div>
+    
+
+    <hr>
+
+    <div style="text-align:center;">
+        
+        <span>Letras: </span>
+        <input type="text" disabled="disabled" id="letra">
+
+        <span>Numeros: </span>
+        <input type="text" disabled="disabled" id="numero">
+
+    </div>
+    
+</body>
+</html>

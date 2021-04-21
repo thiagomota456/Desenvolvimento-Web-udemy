@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        var name = prompt('Digite seu nome: ')
+        var height = prompt('Digite sua altura (em centimetros): ')
+        var peso = prompt('DIgite seu peso: ')
+        
+        height = parseFloat(height)
+        peso = parseFloat(peso)
+
+        console.log(height)
+        console.log(peso)
+        
+        var heightInMeters = height/100
+
+        console.log(heightInMeters)
+
+        var IndiceDeMassaCorporal = peso / (heightInMeters*heightInMeters)
+        var classificacao = ""
+
+        console.log(IndiceDeMassaCorporal)
+        console.log(classificacao)
+
+        
+        if(IndiceDeMassaCorporal < 16){
+            classificacao = 'Baixo peso muito grave'
+        }
+        else if(IndiceDeMassaCorporal >= 16 && IndiceDeMassaCorporal <= 16.99 ){
+            classificacao = 'Baixo peso grave'
+        }
+        else if(IndiceDeMassaCorporal >= 17 && IndiceDeMassaCorporal <= 18.49 ){
+            classificacao = 'Baixo peso'
+        }
+        else if(IndiceDeMassaCorporal >= 18.50 && IndiceDeMassaCorporal <= 24.99 ){
+            classificacao = 'Peso normal'
+        }
+        else if(IndiceDeMassaCorporal >= 25 && IndiceDeMassaCorporal <= 29.99 ){
+            classificacao = ' Sobrepeso'
+        }
+        else if(IndiceDeMassaCorporal >= 30 && IndiceDeMassaCorporal <= 34.99 ){
+            classificacao = 'Obesidade grau I'
+        }
+        else if(IndiceDeMassaCorporal >= 35 && IndiceDeMassaCorporal <= 39,99 ){
+            classificacao = ' Obesidade grau II'
+        }
+        else if(IndiceDeMassaCorporal > 40){
+            classificacao = 'Obesidade grau III'
+        }
+        
+        document.write(name + " possui índice de massa corporal igual a " + IndiceDeMassaCorporal +", sendo classificado como: "+ classificacao +".")
+        
+    </script>
+</head>
+<body>
+</body>
+</html>

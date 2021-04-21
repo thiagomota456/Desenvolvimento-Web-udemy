@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eventos Formulário</title>
+
+        <script>
+
+            function acao1(){
+                alert('Evento disparado')
+            }
+
+            function acao2(){
+                alert('Evento disparado acao2')
+            }
+        
+        </script>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;"><b>Eventos de Formulário</b></h2>
+        <hr>
+
+        <div style="text-align: center;">
+            <h2>Onfocus:</h2>
+            <input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')"  type="text">
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <select name="" id="" onchange="alert('Estado foi modificado')">
+                <option value="">
+                    --Selecione--
+                </option>
+                <option value="1">Primeira opção</option>
+                <option value="2">Segunda opção</option>
+            </select>
+        </div>
+        
+        
+
+    </body>
+
+</html>

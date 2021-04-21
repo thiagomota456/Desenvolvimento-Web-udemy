@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        var numberOne = prompt('Digite um número: ')
+        var numberTwo = prompt('Digite outro número: ')
+
+        numberOne = parseFloat(numberOne)
+        numberTwo = parseFloat(numberTwo)
+ 
+        var operation = prompt('Digite o nome da opreção: ')
+
+        function calculo(numberOne, numberTwo, operation){
+            if(operation == 'soma'){
+                return numberOne + numberTwo
+            }
+            else if(operation == 'subtração'){
+                return numberOne - numberTwo
+            }
+        }
+        
+        var result = calculo(numberOne, numberTwo, operation)
+
+        document.write(result)
+    </script>
+</head>
+<body>
+</body>
+</html>
