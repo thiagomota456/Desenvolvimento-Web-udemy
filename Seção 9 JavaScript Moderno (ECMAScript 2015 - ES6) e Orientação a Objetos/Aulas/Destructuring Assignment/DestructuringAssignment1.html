@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+            //Destruction. Array de desestruturação
+            let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+            
+            let a = frutas[0]
+            let b = frutas[1]
+            let c = frutas[2]
+
+            console.log(a,b,c)
+
+            //A sintexe vai ficando verbosa pra recuperar cada elemeto. pra isso:
+
+            let [a1, b1, , c1] = frutas
+
+            console.log(a1,b1, c1)
+
+            //Ele ignora a toranja pq já tem um valor quandfo a a desistruturação
+            let [a2, b2, c2 = 'toranja', d2, e2 = 'Banaana'] = frutas
+
+            console.log(a2, b2, c2, d2, e2)
+
+            let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']]
+
+            let [,[,n2]] = coisas
+
+            console.log(n2)
+
+            let [[,,za]] = coisas
+            console.log(za)
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

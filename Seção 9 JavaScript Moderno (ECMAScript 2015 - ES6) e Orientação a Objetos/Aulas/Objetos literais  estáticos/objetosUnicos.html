@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+            let assinatura = {
+                idClient: 1000,
+                decricaoServico: "Acesso a internet",
+                status(){ 
+                    console.log('Ativo')
+                }
+            }
+
+            console.log(assinatura.decricaoServico)
+
+            let y = assinatura
+
+            console.log(y.decricaoServico)
+
+            y.decricaoServico = "Iternet + TV + Telefone"
+
+            console.log(assinatura.decricaoServico)
+            console.log(y.decricaoServico)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

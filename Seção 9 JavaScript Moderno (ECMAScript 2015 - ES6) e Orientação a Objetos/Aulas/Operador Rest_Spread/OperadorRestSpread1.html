@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        
+        <script>
+            let tituloArtigo = 'Como usar o operador rest/spread'
+            
+            console.log(tituloArtigo)
+            console.log(...tituloArtigo)
+            console.log([...tituloArtigo])
+
+            let listaCursos1 = ['NodeJs e MongoDB', 'ES6, TypeScript e Angular 4']
+            let listaCursos2 = ['Multiplataforma android/ios', 'Introdução ao GNU/Linux']
+            let ListaCursosCompleto = ['web completo', ...listaCursos1, 'Android completo', ...listaCursos2]
+            
+            console.log(ListaCursosCompleto)
+
+            let pessoa = {nome: 'João', idade: 27}
+            let clone = {endereco: 'Rua Abc', ...pessoa} 
+                
+            console.log(clone)
+        </script>
+    </head>
+    <body>
+               
+    </body>
+</html>

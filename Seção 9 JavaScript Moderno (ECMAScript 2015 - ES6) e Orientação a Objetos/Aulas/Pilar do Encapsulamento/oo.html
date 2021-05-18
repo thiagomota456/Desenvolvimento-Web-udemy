@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+            class Tv{
+                constructor(){
+                    this._relacaoDeCanais = Array(2, 4, 5, 7, 10)
+                    this._canalAtivo = 5
+                    this._volume = 5
+                }
+
+                get canalAtivo(){
+                    return this._canalAtivo
+                }
+                set canalAtivo(valor){
+                    let x = this._relacaoDeCanais.indexOf(valor)
+                    
+                    if(x!=-1)
+                        this._canalAtivo = valor
+                }
+            }
+
+            let tv = new Tv()
+            console.log(tv.canalAtivo)
+            tv.canalAtivo = 3
+            console.log(tv.canalAtivo) 
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

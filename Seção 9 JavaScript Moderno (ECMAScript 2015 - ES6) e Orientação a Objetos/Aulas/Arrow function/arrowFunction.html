@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <script>
+            let quadrado = function(x = 5){
+                return x*x
+            }
+
+            let quadradoArrowFunction = (x) => {
+                return x*x
+            }
+
+            //Com um unico parametro não precisa de parenteses
+            let quadradoArrowFunction2 = x => {
+                return x*x
+            }
+            document.write(`<br>`)
+            
+            document.write(quadrado(9))
+
+            document.write(`<br>`)
+
+            document.write(quadradoArrowFunction(5))
+
+            document.write(`<br>`)
+
+            document.write(quadradoArrowFunction(3))
+
+            document.write(`<br>`)
+            
+            let parOuImpar = numero => numero%2 === 0 ? 'par' : 'impar'
+
+            document.write(parOuImpar(6))
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

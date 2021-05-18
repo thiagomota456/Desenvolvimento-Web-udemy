@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+            var serie = 'Friends';
+            {
+                var serie = 'The walking dead'
+                console.log(serie)
+            }
+            //A varievel de bloco sobrescreve a variavel global por causa da elevação de escopo(usar sempre let)
+            console.log(serie)
+
+            let serie2 = 'Teste 1';
+            {
+                let serie2 = 'Teste 2'
+                console.log(serie2)
+            }
+            console.log(serie2)
+
+            let serie3 = 'Teste 3';
+            {
+                //Comentei pra funcionar 
+                //var serie3 = 'Teste 4'
+                console.log(serie3)
+            }
+            //conflito pois já tem um serie3 amarrado ao global
+            //console.log(serie3)
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

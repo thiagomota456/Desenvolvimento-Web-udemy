@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        
+        <script>
+            //Spred jntando elementos     
+            //contexto reast
+            function soma(...param){
+
+                let resultado = 0
+
+                console.log(param)
+
+                param.forEach( v => resultado+= v)
+
+                return resultado
+            }
+
+            //posso passar parametros in definidos
+            console.log(soma(3, 8, 5, 7))
+
+            //primeiro parametro é m o segundo recebe os outros numeros
+            function multiplicacao(m, ...p){
+                console.log(m)
+                let resultado = 0
+                console.log(p)
+
+                p.forEach(v => resultado += m * v)
+                return resultado;
+            }
+
+            console.log(multiplicacao(5, 7, 12, 3, 49))
+        </script>
+    </head>
+    <body>
+               
+    </body>
+</html>

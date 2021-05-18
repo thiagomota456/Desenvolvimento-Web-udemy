@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <script>
+            Object.prototype.attr50 = 'z' //Atributo global a aplicação
+
+            let animal = {attr1: 'a'}
+            let vertebrado  = { __proto__: animal, attr2: 'b'}
+            let ave  = { __proto__: vertebrado, attr3: 'c', attr2: 'x' }
+            
+            console.log(animal)
+            console.log(vertebrado)
+            console.log(ave.attr1, ave.attr2, ave.attr3, ave.attr50)
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

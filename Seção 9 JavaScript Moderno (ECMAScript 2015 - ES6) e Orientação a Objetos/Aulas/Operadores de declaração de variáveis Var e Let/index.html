@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        //3 escopos: global, função e bloco
+        var serie = 'Friends'
+
+        function x(){
+            var serie = 'Game of Thones'
+            console.log("Escopo de função: "+serie)
+            if(true){
+                console.log("Escopo de bloco dentro de função: "+serie)
+            }
+        }
+        x()
+
+        if(true){
+            console.log("Global: "+serie)
+        }
+
+        function x2(){
+            
+            if(true){
+                console.log(serie2)
+            }
+        }
+        
+        //variavel serie sofre uma elevação de escopo
+        if(true){
+            var serie2 = 'The Walking Dead'
+            console.log(serie2)
+        }
+        x2()
+        console.log(serie2)
+
+        if(true){
+            let series3 = 'How to know you mother'
+            console.log(series3)
+        }
+        console.log(series3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
