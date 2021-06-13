@@ -1,0 +1,1 @@
+Pra executar os arquivos .php instalar o XAMPP e colar arquivos na parta C:\xampp\htdocs
